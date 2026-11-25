@@ -1,0 +1,9 @@
+<p>formularz works!</p>
+<button [routerLink]="['/start']">Wstecz</button>
+
+<form #myForm="ngForm" (ngSubmit)="wysylka(myForm)">
+    <input type="text" name="login" ngModel>
+    <button type="submit">Zapisz</button>
+</form>
+
+<p>{{login}}</p>
